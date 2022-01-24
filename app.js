@@ -50,6 +50,6 @@ app.get("/work" ,function(req,res){
     res.render("list",{listTitle: day+" "+"work list", newListitems:workitem});
 })
 
-app.listen(3000,function(){
+app.listen(process.env.PORT||3000,function(){
     console.log("server is running at port 3000");
 });
